@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #child1 {
+            background-color: palevioletred;
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            height: 4vw;
+            overflow: hidden;
+            z-index: 1;
+
+        }
+
+        #child1 ul {
+            list-style: none;
+            display: flex;
+        }
+
+        #child1 li {
+            margin: 10px;
+            padding: 10px 110px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #child1 li:hover{
+            background-color: darkgray;
+        }
+
+        #child1 a {
+            text-decoration: none;
+        }
+
+        body{
+            background-color:rgb(255, 182, 206);
+            
+        }
+
+
+        /* gallery css */
+
+        .pictures{
+            border: 5px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 82px 82px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 23px;
+            width: 100%;
+            height: 70em;
+
+
+
+        }
+
+        .moiz{
+            border: 4px solid black;
+            position: relative;
+            top: 12px;
+        }
+
+        .moiz figcaption h5{
+            font-weight: 900;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+
+    <div id="child1">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href="resume.html"><strong>Resume</strong></a></li>
+                    <li><a href="gallery.html"><Strong>Gallery</Strong></a></li>
+                    <li><a href="form.html"><strong>Form</strong></a></li>
+                    <li><a href="periodic.html"><strong>Periodic</strong></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+    <div class="pictures">
+
+        <div class="moiz" id="image_1">
+            <figure>
+                <img src="picture/image_1.jpg" alt="picture_no_1">
+                <figcaption>
+                    <h5>Picture Number 1</h5>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="moiz" id="image_2">
+            <figure>
+                <img src="picture/images_2.jpg" alt="picture_no_2">
+                <figcaption>
+                    <h5>Picture Number 2</h5>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="moiz" id="image_3">
+            <figure>
+                <img src="picture/image_3.jpg" alt="picture_no_3">
+                <figcaption>
+                    <h5>Picture Number 3</h5>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="moiz" id="image_4">
+            <figure>
+                <img src="picture/images_4.jpg" alt="picture_no_4">
+                <figcaption>
+                    <h5>Picture Number 4</h5>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="moiz" id="image_5">
+            <figure>
+                <img src="picture/images_5.jpg" alt="picture_no_5">
+                <figcaption>
+                    <h5>Picture Number 5</h5>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="moiz" id="image_6">
+            <figure>
+                <img src="picture/images_6.jpg" alt="picture_no_6">
+                <figcaption>
+                    <h5>Picture Number 6</h5>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="moiz" id="image_7">
+            <figure>
+                <img src="picture/images_7.jpg" alt="picture_no_7">
+                <figcaption>
+                    <h5>Picture Number 7</h5>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="moiz" id="image_8">
+            <figure>
+                <img src="picture/images_8.jpg" alt="picture_no_8">
+                <figcaption>
+                    <h5>Picture Number 8</h5>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="moiz" id="image_9">
+            <figure>
+                <img src="picture/images_9.jpg" alt="picture_no_9">
+                <figcaption>
+                    <h5>Picture Number 9</h5>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="moiz" id="image_10">
+            <figure>
+                <img src="picture/images_10.jpg" alt="picture_no_10">
+                <figcaption>
+                    <h5>Picture Number 10</h5>
+                </figcaption>
+            </figure>
+        </div>
+
+    </div>
+</body>
+</html>

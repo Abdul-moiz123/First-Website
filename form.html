@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #child1 {
+            background-color: palevioletred;
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            height: 4vw;
+            overflow: hidden;
+            z-index: 1;
+
+        }
+
+        #child1 ul {
+            list-style: none;
+            display: flex;
+        }
+
+        #child1 li {
+            margin: 10px;
+            padding: 10px 110px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #child1 li:hover {
+            background-color: darkgray;
+        }
+
+        #child1 a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: rgb(255, 182, 206);
+
+        }
+
+        /* form css */
+
+        #form fieldset {
+            border: 5px solid black;
+            margin: 12px;
+            padding: 12px;
+            width: 70em;
+        }
+
+        #form input{
+            opacity: 0.7;
+        }
+
+        #form #button{
+            font-size: medium;
+            border: 3px solid black;
+            border-radius: 50px;
+            padding: 12px 100px ;
+                
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <div id="child1">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href="resume.html"><strong>Resume</strong></a></li>
+                    <li><a href="gallery.html"><Strong>Gallery</Strong></a></li>
+                    <li><a href="form.html"><strong>Form</strong></a></li>
+                    <li><a href="periodic.html"><strong>Periodic</strong></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div id="form">
+        <form action="index.html" method="post" enctype="multipart/form-data"></form>
+        <fieldset id="f1">
+            <legend><strong>Personal Detail</strong></legend><br>
+
+            <label for="username"><strong>Username: </strong></label>
+            <input type="text" name="username" id="username" required placeholder="enter your name" maxlength="15"
+                minlength="8"><br><br>
+
+            <label for="Nickname"><strong>Nickname: </strong></label>
+            <input type="text" name="Nickname" id="Nickname" required placeholder="enter your nickname name"
+                maxlength="15" minlength="8"><br><br>
+
+            <label for="Password"><strong>Password: </strong></label>
+            <input type="password" name="Password" id="Password" placeholder="enter your password here" maxlength="15"
+                minlength="8" required><br><br>
+
+            <label for="Address"><strong>Address: </strong></label>
+            <input type="text" name="Address" id="Address" required placeholder="enter your address">
+
+            <fieldset id="f2">
+                <legend><strong>More Info</strong></legend>
+
+                <label for="Male"><strong>Male</strong></label>
+                <input type="radio" name="Gender" id="Male" required value="Male">
+                <label for="Female"><strong>Female</strong></label>
+                <input type="radio" name="Gender" id="Female" required value="Female"><br><br>
+
+                <label for="Skills"><strong>Hobbies: </strong></label><br>
+                <label for="Web Development">Web Development</label>
+                <input type="checkbox" name="Web Development" id="Web Development" value="Web Development">
+                <label for="Chatbot">Chatbot</label>
+                <input type="checkbox" name="Chatbot" id="Chatbot" value="Chatbot">
+                <label for="Flutter">Flutter</label>
+                <input type="checkbox" name="Flutter" id="Flutter" value="Flutter">
+                <label for="React.js">React.js</label>
+                <input type="checkbox" name="React.js" id="React.js" value="React.js"><br><br>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset id="f3">
+                <legend><strong>Contact Info</strong></legend>
+
+                <label for="Email"><strong>Email: </strong></label>
+                <input type="email" name="email" id="email" placeholder="abd@gmail.com" required><br><br>
+
+                <label for="tel"><strong>Contact #: </strong></label>
+                <input type="tel" name="tel" id="tel" required placeholder="0323-2381-841"><br><br>
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend><strong>Verification Proof</strong></legend>
+
+                <label for="image"><strong>Image</strong></label>
+                <input type="image" src="submit,jpg" alt="No image found"><br><br>
+
+                <label for="file"><strong>File: </strong></label>
+                <input type="file" name="file" id="file" required >
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Feedback</strong></legend>
+                <label for="comment"><strong>Comment: </strong></label><br>
+                <textarea name="comment" id="comment" cols="50" rows="8"></textarea>
+            </fieldset>
+
+            <input type="button" value="Submit" id="button">
+            <input type="button" value="Reset" id="button">
+        </fieldset>
+
+
+    </div>
+
+</body>
+
+</html>
